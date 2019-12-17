@@ -17,7 +17,12 @@ class SalesEngine
   end
 
   def items
+<<<<<<< HEAD
     Item.create_items(@item_path)
+=======
+    Item.from_csv(@item_path)
+    Item.all
+>>>>>>> af874c6ea44f0694ef69d69e5501b10135c99a1d
   end
 
   def merchant_collection
